@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>田中義久の自己紹介</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png">
+  </head>
+  <body>
+    <h1>田中義久紹介サイト</h1>
+    <div id="mokuji">
+      <h2>目次</h2>
+      <ul>
+        <li><a href="#who-is-yoshihisa">田中義久とは？</a></li>
+        <li><a href="#products">成果物</a></li>
+      </ul>
+    </div>
+    <div id="who-is-yoshihisa">
+      <h2>田中義久とは？</h2>
+      <div style="display: flex;">
+        <div>
+          <h3>所属</h3>
+          九州大学大学院　数理学府数理学専攻
+          <h3>アルバイト</h3>
+          個別指導塾のトライ　通谷駅前校
+          <h3>趣味</h3>
+          <ul>
+            <li onclick="showHideStack()">
+              <u>プログラミング</u><ruby>　<rt>成果物については後述</rt></ruby>
+              <div id="stack" style="display: none;">
+                <b>技術スタック等</b>
+                <div>
+                  <b>使いこなせるもの</b>
+
+                  <br>
+                  デザインは苦手（このサイトを見てもらえるとわかりますよね？）
+                </div>
+                <br>
+              </div>
+            </li>
+            <li onclick="showHidePCInfo();" id=""">
+              <u>PCイジリ</u>
+              <div id="pc-info" style="display: none;">
+                <b>やっていること</b>
+                <ul>
+                  <li>Youtube</li>
+                  <li>音楽鑑賞（「ビリーバンバン」が好きです）</li>
+                  <li>ゲーム（マイクラ）</li>
+                  <li>コレクション</li>
+                </ul>
+                <br>
+                <b>PCのコレクション</b>
+                <table style="margin-left: 1em">
+                  <tr><th align="center">機種</th><th align="center">スペック</th><th align="center">入手方法</th><th align="center">用途</th></tr>
+                  <tr><td>自作PC</td><td>CPU i7 7700<br>RAM 24GB<br>SSD 1TB + HDD 4TB</td><td>自費購入</td><td>メイン機</td></tr>
+                  <tr><td>Mac mini</td><td>CPU M1チップ<br>RAM 8GB<br>SSD 512GB</td><td>自費購入</td><td>サブ機</td></tr>
+                  <tr><td>ノートPC</td><td>CPU i5 6300U<br>RAM 4GB<br>SSD 512GB</td><td>ゴミ捨て場から拝借<br>(SSDは親が購入)</td><td>家族共用</td></tr>
+                  <tr><td>Macbook Air</td><td>CPU i5 5250u<br>RAM 4GB<br>SSD 1TB</td><td>親からもらった<br>(SSDは自費購入)</td><td>Proxmox鯖<br>(旧メイン機)</td></tr>
+                  <tr><td>ノートPC</td><td>CPU i7 6500u<br>RAM 8GB<br>SSD 1TB</td><td>ごみ捨て場から拝借<br>(SSDは自費購入)</td><td>Proxmox鯖</td></tr>
+                  <tr><td>ノートPC</td><td>CPU Core2 Duo<br>RAM 4GB<br>SSD 256GB</td><td>知り合いから拝借<br>(SSDは自費購入)</td><td>Proxmox鯖</td></tr>
+                </table>
+                <br>
+              </div>
+            </li>
+            <li><span onclick="showHideMaking()"><u>ゆっくりマイクラ実況</u></span><font id="making" color="#f00" style="display: none;">　絶賛制作中</font></li>
+            <li>ペンの改造</li>
+          </ul>
+        </div>
+        <img src="./img/jigazo.png" style="width: 25vh; height:25vh; margin-left: 10vw;">
+      </div>
+    </div>
+    <div id="products">
+      <h2>成果物</h2>
+      <div style="display: flex;">
+        <ul>
+          <li onclick="setIframe('https://script.google.com/macros/s/AKfycby5Rx2rQfcgltrTtrut_DZWKkxAgtwpKZ4133-FzqFtp-tRVfCvy68ONR5S6WvDd5PoJA/exec')">生徒に勉強を教えるサイト（データ入力中）</li>
+          <!-- <li onclick="setIframe('http://18.181.106.168/training')">計算ドリル</li> -->
+          <li onclick="setIframe('http://localhost:3000/training')">計算ドリル</li>
+          <li onclick="setIframe('')"></li>
+        </ul>
+        <iframe id="iframe" src="" style="height: 50vh; width: 50vw"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
