@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="./img/icon.png">
   </head>
   <body>
-    <h1>田中義久紹介サイト</h1>
+    <h1>田中義久の紹介サイト</h1>
     <div id="mokuji">
       <h2>目次</h2>
       <ul>
@@ -20,28 +20,49 @@
     <div id="who-is-yoshihisa">
       <h2>田中義久とは？</h2>
       <div style="display: flex;">
+        <img src="./img/jigazo.png" style="width: 25vh; height:25vh; margin-right: 10vw;">
         <div>
           <h3>所属</h3>
           九州大学大学院　数理学府数理学専攻
+          <h3>住所</h3>
+          福岡県中間市
           <h3>アルバイト</h3>
           個別指導塾のトライ　通谷駅前校
           <h3>趣味</h3>
           <ul>
-            <li onclick="showHideStack()">
-              <u>プログラミング</u><ruby>　<rt>成果物については後述</rt></ruby>
+            <li>
+              <u onclick="showHideStack()">プログラミング</u><ruby>　<rt>成果物については後述</rt></ruby>
               <div id="stack" style="display: none;">
                 <b>技術スタック等</b>
                 <div>
-                  <b>使いこなせるもの</b>
-
+                  <b style="margin-left: 1em;">ある程度使いこなせるもの</b>
+                  <ul style="margin-left: 1em;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Ruby on Rails</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Swift</li>
+                    <li>git/Github</li>
+                    <li>Linux(Ubuntu)</li>
+                  </ul>
+                  <b style="margin-left: 1em;">勉強中</b>
+                  <ul style="margin-left: 1em;">
+                    <li>SpringBoot</li>
+                    <li>React</li>
+                    <li>Flutter</li>
+                    <li>Tensorflow</li>
+                    <li>Proxmox</li>
+                  </ul>
                   <br>
-                  デザインは苦手（このサイトを見てもらえるとわかりますよね？）
+                  ※デザインは苦手（このサイトを見てもらえるとわかりますよね？）
                 </div>
                 <br>
               </div>
             </li>
-            <li onclick="showHidePCInfo();" id=""">
-              <u>PCイジリ</u>
+            <li>
+              <u onclick="showHidePCInfo();">PCイジリ</u>
               <div id="pc-info" style="display: none;">
                 <b>やっていること</b>
                 <ul>
@@ -65,19 +86,33 @@
               </div>
             </li>
             <li><span onclick="showHideMaking()"><u>ゆっくりマイクラ実況</u></span><font id="making" color="#f00" style="display: none;">　絶賛制作中</font></li>
-            <li>ペンの改造</li>
+            <li>
+              <u onclick="showHidePen()">ペンの改造</u>
+              <div id="pen" style="display: none;">
+                <p>
+                  消しゴム機能付きの低重心多機能ペン<br>
+                  <img src="./img/fit.jpg" width="25%">
+                </p>
+                <p>
+                  JET STREAMインク搭載のDr.Grip<br>
+                  <img src="./img/jet.jpg" width="25%"><br>
+                  写真じゃ分からないですよね…。
+                </p>
+              </div>
+            </li>
+            <li>お絵描き</li>
           </ul>
         </div>
-        <img src="./img/jigazo.png" style="width: 25vh; height:25vh; margin-left: 10vw;">
       </div>
     </div>
     <div id="products">
       <h2>成果物</h2>
       <div style="display: flex;">
         <ul>
-          <li onclick="setIframe('https://script.google.com/macros/s/AKfycby5Rx2rQfcgltrTtrut_DZWKkxAgtwpKZ4133-FzqFtp-tRVfCvy68ONR5S6WvDd5PoJA/exec')"><u>生徒に勉強を教えるサイト(データ入力中)(GAS[JS(jQuery)のFrontEnd] + AWS[RailsのBackEnd])</u></li>
-          <li onclick="setIframe('http://18.181.106.168/training')"><u>計算ドリル</u>(Rails)</li>
-          <li onclick="setIframe('https://english-story-4413.github.io/EnglishStory')"><u>英語の小説</u>(Reactのお勉強用)</li>
+          <li><u onclick="setIframe('https://script.google.com/macros/s/AKfycby5Rx2rQfcgltrTtrut_DZWKkxAgtwpKZ4133-FzqFtp-tRVfCvy68ONR5S6WvDd5PoJA/exec')">生徒に勉強を教えるサイト</u>(データ入力中)(GAS[JS(jQuery)のFrontEnd] + AWS[RailsのBackEnd])</li>
+          <li><u onclick="setIframe('http://18.181.106.168/training')">計算ドリル</u>(Rails)</li>
+          <li><u onclick="setIframe('https://english-story-4413.github.io/EnglishStory')">英語の小説</u>(Reactのお勉強用)</li>
+          <li><u onclick="setIframe('https://applion.jp/iphone/app/1530379759/')">崩落チェス</u>(Swift)(バージョンが古すぎてインストールできません)</li>
         </ul>
         <iframe id="iframe" src="" style="height: 50vh; width: 50vw"></iframe>
       </div>

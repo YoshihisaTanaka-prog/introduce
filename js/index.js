@@ -18,6 +18,10 @@ function showHidePCInfo(){
   showHide("#pc-info");
 }
 
+function showHidePen(){
+  showHide("#pen");
+}
+
 function setIframe(url){
   $("#iframe").attr("src", url);
 }
